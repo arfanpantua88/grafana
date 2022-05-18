@@ -1,0 +1,38 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:ModifyRecommendation",
+                "rds:CancelExportTask",
+                "rds:DescribeDBEngineVersions",
+                "rds:CrossRegionCommunication",
+                "rds:DescribeExportTasks",
+                "rds:StartExportTask",
+                "rds:DescribeEngineDefaultParameters",
+                "rds:DeleteDBInstanceAutomatedBackup",
+                "rds:DescribeRecommendations",
+                "rds:DescribeReservedDBInstancesOfferings",
+                "rds:ModifyCertificates",
+                "rds:DescribeRecommendationGroups",
+                "rds:DescribeOrderableDBInstanceOptions",
+                "rds:DescribeEngineDefaultClusterParameters",
+                "rds:DescribeSourceRegions",
+                "rds:CreateDBProxy",
+                "rds:DescribeCertificates",
+                "rds:DescribeEventCategories",
+                "rds:DescribeAccountAttributes",
+                "rds:DescribeEvents"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "rds:*",
+            "Resource": "arn:aws:rds:ap-southeast-1:706050889978:db:dev-20220411-rds-pg"
+        }
+    ]
+}
